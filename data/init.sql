@@ -86,7 +86,7 @@ CREATE TABLE provider_patient
 (
 patient_id VARCHAR(255) NOT NULL,
 provider_id VARCHAR(255) NOT NULL,
-status ENUM('Active', 'Inactive') NOT NULL,
+status ENUM('Active', 'Inactive', 'Inactive-Requested') NOT NULL,
 created_at DATE NOT NULL,
 updated_at DATE NOT NULL,
 CONSTRAINT patient_provider FOREIGN KEY (patient_id) REFERENCES patients (id),
