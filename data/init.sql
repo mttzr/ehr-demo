@@ -239,6 +239,7 @@ CONSTRAINT medication_order_medication FOREIGN KEY (medication_id) REFERENCES me
 CREATE TABLE visit_media
 (
 id VARCHAR(255) NOT NULL,
+meta_data VARCHAR(255),
 data BLOB NOT NULL,
 visit_id VARCHAR (255) NOT NULL,
 PRIMARY KEY (id),
